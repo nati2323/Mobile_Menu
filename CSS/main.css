@@ -56,8 +56,94 @@
   color: #fff;
 }
 
+/* Modal  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  background-color: rgba(0, 20, 50, 0.3);
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border: 1px solid #ebecf0;
+  border-radius: 12px;
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.popup-text-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.popup-text-lg {
+  color: #172b4d;
+  font-size: 34px;
+  font-weight: bolder;
+  line-height: 48px;
+  letter-spacing: 0.37px;
+}
+
+.popup-text-sm {
+  margin: 1rem 0 2rem 0;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .sm-text-2 {
   font-size: 1rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-block .tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 14px 0 20px 0;
+  border-bottom: 1px solid lightgrey;
+  padding: 0 0 20px 0;
+}
+
+.popup-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btnImg {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -74,6 +160,11 @@
 
   .hamburger {
     display: none;
+  }
+
+  .modal {
+    padding: 5% 10%;
+    margin: auto;
   }
 
   .popup-img {
