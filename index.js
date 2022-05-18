@@ -28,3 +28,17 @@ hamburger.addEventListener('click', (e) => {
     navigation.classList.remove('show');
     hamburger.classList.remove('hide');
   });
+
+  about.addEventListener('click', (e) => {
+    e.stopPropagation();
+  
+    navigation.classList.remove('show');
+    hamburger.classList.remove('hide');
+  });
+  
+  contact.addEventListener('click', (e) => {
+    e.stopPropagation();
+  
+    navigation.classList.remove('show');
+    hamburger.classList.remove('hide');
+  });
