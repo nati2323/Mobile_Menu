@@ -150,11 +150,7 @@ contact.addEventListener('click', (e) => {
   hamburger.classList.remove('hide');
 });
 
-// popup
-// dynamic html code from javascript
 const portfolio = document.querySelector('#portfolio');
-const modal = document.querySelector('#myModal');
-
 portfolio.classList.add('works');
 
 Array.from(portfolio.children).forEach((child, index) => {
