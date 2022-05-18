@@ -17,8 +17,6 @@
 
 - Clone repository in your local machine git clone https://github.com/nati2323/Mobile_Menu.git
 - open index.html in your browser.
-- git clone 
-- open index.html in your browser.
 
 ## Prerequisites
 
